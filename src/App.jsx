@@ -22,7 +22,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <BrowserRouter basename={import.meta.env.VITE_BASE_URL || "/"}>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/AESkolar-app"}>
       <Routes>
         <Route path="/" element={<Landing_page />} />
         <Route path="/essay" element={<Essay />} />
