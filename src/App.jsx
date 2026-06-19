@@ -22,7 +22,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.VITE_BASE_URL || "/"}>
       <Routes>
         <Route path="/" element={<Landing_page />} />
         <Route path="/essay" element={<Essay />} />
