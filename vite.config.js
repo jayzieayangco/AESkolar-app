@@ -11,10 +11,8 @@ export default defineConfig({
       "@ai-engine": path.resolve(__dirname, "./ai-engine"),
     },
   },
-  // For GitHub Pages deployment - set your repo name here!
-  // If your repo is at https://github.com/your-username/your-repo, set base to "/your-repo/"
-  // If you're using a custom domain, just use "/"
-  base: process.env.NODE_ENV === "production" ? "/AESkolar-app/" : "/",
+  // For GitHub Pages deployment - using HashRouter so base is just "/"
+  base: "/",
   server: {
     host: "0.0.0.0",
     // Must match Supabase Dashboard → Auth → URL Configuration → Site URL port

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Landing_page from "./pages/landing_page/Landing_page";
 import Essay from "./pages/essay/Essay";
 import Sign_in from "./pages/sign_in/Sign_in";
@@ -22,7 +22,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/AESkolar-app"}>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Landing_page />} />
         <Route path="/essay" element={<Essay />} />
@@ -48,7 +48,7 @@ function App() {
         />
         <Route path="/student_settings" element={<Student_Settings />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
