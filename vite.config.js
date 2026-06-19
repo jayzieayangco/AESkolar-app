@@ -11,8 +11,8 @@ export default defineConfig({
       "@ai-engine": path.resolve(__dirname, "./ai-engine"),
     },
   },
-  // For GitHub Pages deployment - using HashRouter so base is just "/"
-  base: "/",
+  // For GitHub Pages deployment - set base to project name for correct asset loading
+  base: "/AESkolar-app/",
   server: {
     host: "0.0.0.0",
     // Must match Supabase Dashboard → Auth → URL Configuration → Site URL port
