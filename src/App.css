@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "./styles/aeskolar.css";
+
+* {
+  font-family: "Inder", sans-serif;
+}
